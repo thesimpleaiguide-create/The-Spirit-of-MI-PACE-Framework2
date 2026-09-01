@@ -52,65 +52,65 @@
         }
     </style>
 </head>
-<body class="bg-transparent m-0 p-4 sm:p-6 font-sans text-ttnSlate antialiased w-full">
+<body class="bg-transparent m-0 p-4 sm:p-8 md:p-12 font-sans text-ttnSlate antialiased w-full min-h-screen flex flex-col justify-center">
 
-    <div class="max-w-4xl mx-auto space-y-8">
+    <div class="w-full max-w-6xl mx-auto space-y-10 sm:space-y-12">
         
         <!-- Header -->
-        <div class="text-center space-y-3">
-            <h1 class="text-2xl sm:text-3xl font-bold text-ttnNavy tracking-tight">
+        <div class="text-center space-y-4 sm:space-y-6">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-ttnNavy tracking-tight">
                 The Spirit of MI: <span class="text-ttnTrustBlue">PACE</span>
             </h1>
-            <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            <p class="text-lg sm:text-xl md:text-2xl text-slate-600 font-medium leading-relaxed max-w-4xl mx-auto">
                 Four elements. None works alone. Take one away and the whole thing collapses into something else—persuasion, negotiation, or a lecture in disguise.
             </p>
         </div>
 
         <!-- Interactive Tab Navigation -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
             
-            <button onclick="switchTab('P')" id="btn-P" class="group flex flex-col items-center justify-center p-4 sm:p-5 bg-white border-2 border-slate-200 rounded-xl transition-all duration-200 hover:border-ttnTrustBlue/50 hover:bg-slate-50 text-ttnNavy active:scale-95">
-                <span class="text-2xl sm:text-3xl font-bold mb-1 group-hover:text-ttnTrustBlue transition-colors">P</span>
-                <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wide group-hover:text-ttnNavy transition-colors">Partnership</span>
+            <button onclick="switchTab('P')" id="btn-P" class="group flex flex-col items-center justify-center p-6 sm:p-8 md:p-10 bg-white border-2 border-slate-200 rounded-2xl transition-all duration-200 hover:border-ttnTrustBlue/50 hover:bg-slate-50 text-ttnNavy active:scale-95 shadow-sm hover:shadow-md">
+                <span class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-4 group-hover:text-ttnTrustBlue transition-colors">P</span>
+                <span class="text-sm sm:text-base md:text-lg font-bold text-slate-500 uppercase tracking-widest group-hover:text-ttnNavy transition-colors">Partnership</span>
             </button>
 
-            <button onclick="switchTab('A')" id="btn-A" class="group flex flex-col items-center justify-center p-4 sm:p-5 bg-white border-2 border-slate-200 rounded-xl transition-all duration-200 hover:border-ttnTrustBlue/50 hover:bg-slate-50 text-ttnNavy active:scale-95">
-                <span class="text-2xl sm:text-3xl font-bold mb-1 group-hover:text-ttnTrustBlue transition-colors">A</span>
-                <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wide group-hover:text-ttnNavy transition-colors">Acceptance</span>
+            <button onclick="switchTab('A')" id="btn-A" class="group flex flex-col items-center justify-center p-6 sm:p-8 md:p-10 bg-white border-2 border-slate-200 rounded-2xl transition-all duration-200 hover:border-ttnTrustBlue/50 hover:bg-slate-50 text-ttnNavy active:scale-95 shadow-sm hover:shadow-md">
+                <span class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-4 group-hover:text-ttnTrustBlue transition-colors">A</span>
+                <span class="text-sm sm:text-base md:text-lg font-bold text-slate-500 uppercase tracking-widest group-hover:text-ttnNavy transition-colors">Acceptance</span>
             </button>
 
-            <button onclick="switchTab('C')" id="btn-C" class="group flex flex-col items-center justify-center p-4 sm:p-5 bg-white border-2 border-slate-200 rounded-xl transition-all duration-200 hover:border-ttnTrustBlue/50 hover:bg-slate-50 text-ttnNavy active:scale-95">
-                <span class="text-2xl sm:text-3xl font-bold mb-1 group-hover:text-ttnTrustBlue transition-colors">C</span>
-                <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wide group-hover:text-ttnNavy transition-colors">Compassion</span>
+            <button onclick="switchTab('C')" id="btn-C" class="group flex flex-col items-center justify-center p-6 sm:p-8 md:p-10 bg-white border-2 border-slate-200 rounded-2xl transition-all duration-200 hover:border-ttnTrustBlue/50 hover:bg-slate-50 text-ttnNavy active:scale-95 shadow-sm hover:shadow-md">
+                <span class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-4 group-hover:text-ttnTrustBlue transition-colors">C</span>
+                <span class="text-sm sm:text-base md:text-lg font-bold text-slate-500 uppercase tracking-widest group-hover:text-ttnNavy transition-colors">Compassion</span>
             </button>
 
             <!-- 'E' Button intentionally styled for orange hover state to hint at importance -->
-            <button onclick="switchTab('E')" id="btn-E" class="group flex flex-col items-center justify-center p-4 sm:p-5 bg-white border-2 border-slate-200 rounded-xl transition-all duration-200 hover:border-ttnActionOrange/50 hover:bg-orange-50 text-ttnNavy active:scale-95">
-                <span class="text-2xl sm:text-3xl font-bold mb-1 group-hover:text-ttnActionOrange transition-colors">E</span>
-                <span class="text-xs sm:text-sm font-medium text-slate-500 uppercase tracking-wide group-hover:text-ttnNavy transition-colors">Evocation</span>
+            <button onclick="switchTab('E')" id="btn-E" class="group flex flex-col items-center justify-center p-6 sm:p-8 md:p-10 bg-white border-2 border-slate-200 rounded-2xl transition-all duration-200 hover:border-ttnActionOrange/50 hover:bg-orange-50 text-ttnNavy active:scale-95 shadow-sm hover:shadow-md">
+                <span class="text-4xl sm:text-5xl md:text-6xl font-bold mb-2 md:mb-4 group-hover:text-ttnActionOrange transition-colors">E</span>
+                <span class="text-sm sm:text-base md:text-lg font-bold text-slate-500 uppercase tracking-widest group-hover:text-ttnNavy transition-colors">Evocation</span>
             </button>
 
         </div>
 
         <!-- Content Display Area -->
-        <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm min-h-[220px] flex items-center relative overflow-hidden">
+        <div class="bg-white border-2 border-slate-200 rounded-3xl p-8 sm:p-12 md:p-16 shadow-lg min-h-[300px] md:min-h-[400px] flex items-center relative overflow-hidden transition-all duration-300">
             
             <!-- Default Empty State -->
             <div id="content-default" class="tab-content active w-full text-center text-slate-400">
-                <svg class="w-12 h-12 mx-auto mb-3 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /></svg>
-                <p class="text-sm font-medium">Select a pillar above to explore its meaning.</p>
+                <svg class="w-16 h-16 md:w-24 md:h-24 mx-auto mb-6 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" /></svg>
+                <p class="text-lg md:text-xl font-medium tracking-wide">Select a pillar above to explore its meaning.</p>
             </div>
 
             <!-- Content P -->
             <div id="content-P" class="tab-content w-full">
-                <div class="flex items-start gap-4 sm:gap-6">
-                    <div class="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-ttnIceBlue text-ttnTrustBlue rounded-full flex items-center justify-center">
-                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-10 text-center sm:text-left">
+                    <div class="flex-shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-ttnIceBlue text-ttnTrustBlue rounded-full flex items-center justify-center shadow-inner">
+                        <svg class="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
                     </div>
                     <div>
-                        <h3 class="text-lg sm:text-xl font-bold text-ttnNavy mb-2">Partnership</h3>
-                        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                            You're working alongside your patient, not doing something <em>to</em> them. Two experts in the room: you on the clinical picture, they on their own life. <strong class="text-ttnNavy font-semibold">Neither outranks the other.</strong>
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-ttnNavy mb-4 md:mb-6 tracking-tight">Partnership</h3>
+                        <p class="text-lg sm:text-xl md:text-2xl text-slate-700 leading-relaxed md:leading-loose">
+                            You're working alongside your patient, not doing something <em class="text-ttnTrustBlue font-semibold">to</em> them. Two experts in the room: you on the clinical picture, they on their own life. <strong class="text-ttnNavy font-bold">Neither outranks the other.</strong>
                         </p>
                     </div>
                 </div>
@@ -118,14 +118,14 @@
 
             <!-- Content A -->
             <div id="content-A" class="tab-content w-full">
-                <div class="flex items-start gap-4 sm:gap-6">
-                    <div class="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-ttnIceBlue text-ttnTrustBlue rounded-full flex items-center justify-center">
-                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-10 text-center sm:text-left">
+                    <div class="flex-shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-ttnIceBlue text-ttnTrustBlue rounded-full flex items-center justify-center shadow-inner">
+                        <svg class="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <div>
-                        <h3 class="text-lg sm:text-xl font-bold text-ttnNavy mb-2">Acceptance</h3>
-                        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                            You respect your patient's right to choose, including the choice <em>not</em> to change today. Acceptance isn't approval of the behaviour. <strong class="text-ttnNavy font-semibold">It's respect for the person holding it.</strong>
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-ttnNavy mb-4 md:mb-6 tracking-tight">Acceptance</h3>
+                        <p class="text-lg sm:text-xl md:text-2xl text-slate-700 leading-relaxed md:leading-loose">
+                            You respect your patient's right to choose, including the choice <em class="text-ttnTrustBlue font-semibold">not</em> to change today. Acceptance isn't approval of the behaviour. <strong class="text-ttnNavy font-bold">It's respect for the person holding it.</strong>
                         </p>
                     </div>
                 </div>
@@ -133,14 +133,14 @@
 
             <!-- Content C -->
             <div id="content-C" class="tab-content w-full">
-                <div class="flex items-start gap-4 sm:gap-6">
-                    <div class="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-ttnIceBlue text-ttnTrustBlue rounded-full flex items-center justify-center">
-                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-10 text-center sm:text-left">
+                    <div class="flex-shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-ttnIceBlue text-ttnTrustBlue rounded-full flex items-center justify-center shadow-inner">
+                        <svg class="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
                     </div>
                     <div>
-                        <h3 class="text-lg sm:text-xl font-bold text-ttnNavy mb-2">Compassion</h3>
-                        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                            You act in your patient's best interest, not for your own convenience, your own comfort, or to end an awkward consultation faster. <strong class="text-ttnNavy font-semibold">Compassion keeps the other three honest.</strong>
+                        <h3 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-ttnNavy mb-4 md:mb-6 tracking-tight">Compassion</h3>
+                        <p class="text-lg sm:text-xl md:text-2xl text-slate-700 leading-relaxed md:leading-loose">
+                            You act in your patient's best interest, not for your own convenience, your own comfort, or to end an awkward consultation faster. <strong class="text-ttnNavy font-bold">Compassion keeps the other three honest.</strong>
                         </p>
                     </div>
                 </div>
@@ -149,19 +149,19 @@
             <!-- Content E -->
             <div id="content-E" class="tab-content w-full">
                 <!-- Special Orange Accent bar for E -->
-                <div class="absolute left-0 top-0 bottom-0 w-1.5 bg-ttnActionOrange"></div>
+                <div class="absolute left-0 top-0 bottom-0 w-2 md:w-3 bg-ttnActionOrange"></div>
                 
-                <div class="flex items-start gap-4 sm:gap-6">
-                    <div class="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 bg-orange-100 text-ttnActionOrange rounded-full flex items-center justify-center">
-                        <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
+                <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 sm:gap-10 text-center sm:text-left">
+                    <div class="flex-shrink-0 w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-orange-100 text-ttnActionOrange rounded-full flex items-center justify-center shadow-inner">
+                        <svg class="w-10 h-10 sm:w-14 sm:h-14 md:w-16 md:h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                     </div>
                     <div>
-                        <div class="flex items-center gap-2 mb-2">
-                            <h3 class="text-lg sm:text-xl font-bold text-ttnNavy">Evocation</h3>
-                            <span class="px-2 py-0.5 rounded text-[10px] sm:text-xs font-bold bg-ttnActionOrange text-white uppercase tracking-wider">The Focus</span>
+                        <div class="flex flex-col sm:flex-row items-center sm:items-center gap-3 sm:gap-4 mb-4 md:mb-6">
+                            <h3 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-ttnNavy tracking-tight">Evocation</h3>
+                            <span class="px-3 py-1 md:px-4 md:py-1.5 rounded-md text-xs sm:text-sm md:text-base font-bold bg-ttnActionOrange text-white uppercase tracking-widest shadow-sm">The Focus</span>
                         </div>
-                        <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-                            You draw the patient's own motivations, values, and reasons out, rather than installing yours. It's the most counterintuitive of the four, and the one that does the most work. <strong class="text-ttnActionOrange font-semibold">We'll spend the next page on this alone.</strong>
+                        <p class="text-lg sm:text-xl md:text-2xl text-slate-700 leading-relaxed md:leading-loose">
+                            You draw the patient's own motivations, values, and reasons out, rather than installing yours. It's the most counterintuitive of the four, and the one that does the most work. <strong class="text-ttnActionOrange font-bold">We'll spend the next page on this alone.</strong>
                         </p>
                     </div>
                 </div>
